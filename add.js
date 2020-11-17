@@ -9,5 +9,4 @@ console.log("Str Addition is: "+s3);
 let d=new Date();//creates a variable which will contain the current date
 let today="Today is: " + (d.getMonth() + 1) + "/" + d.getDate() + "/" + d.getFullYear();
 let time="Time: "+d.getHours() + ":" + (d.getMinutes());
-
 console.log(today);
