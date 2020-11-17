@@ -1,5 +1,4 @@
 process = require('process');
-console.log("Enter a number for day of the week");
 let input= process.argv[2];
 if(input==0)
 {

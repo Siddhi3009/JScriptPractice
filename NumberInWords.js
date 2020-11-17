@@ -1,5 +1,4 @@
 process = require('process');
-console.log("Enter a single digit number");
 input= process.argv[2];
 if(input==0)
 {
