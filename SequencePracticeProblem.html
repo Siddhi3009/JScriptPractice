@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script>
+'use strict';
+    function askDefault(yes, no, theQue = 'Do you want another number?')
+    {
+        if(question(theQue)) yes();
+        else no();
+    }
+    function ask(theQue, ...others)
+    {
+        if(question(theQue)) others[0]()
+        else others[1]();
+    }
+    function showOk()
+    {
+        let number = Math.floor(Math.random() * 10);
+        alert("Your Number is " + number);
+    }
+    function showCancel()
+    {
+        alert("No other task needs to be done");
+    }
+    let question = function(theQue)
+    {
+        return confirm(theQue);
+    }
+    ask("Do you a random number?", showOk, showCancel);
+    askDefault(showOk, showCancel);
+</script>
