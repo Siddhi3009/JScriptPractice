@@ -1,4 +1,4 @@
-io = require('process');
+process = require('process');
 input =  process.argv[2];
 if(input == 1)
 {
